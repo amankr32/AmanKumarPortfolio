@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --fg: #222831;
+  --muted: #68717a;
+  --line: #cecfd1;
+  --accent: #0083b6;
+  --accent-hover: #005a7d;
+  --footer-bg: #0092ca;
+  --sidebar-bio: #495057;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e2227;
+    --fg: #e2e8f0;
+    --muted: #94a3b8;
+    --line: #333842;
+    --accent: #38bdf8;
+    --accent-hover: #7dd3fc;
+    --footer-bg: #0f172a;
+    --sidebar-bio: #cbd5e1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Academic text justify matching Minimal Mistakes */
+.text-academic-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Minimal Mistakes link styles */
+a {
+  color: var(--accent);
+  transition: color 0.15s ease-in-out;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* Headings anchor links styling */
+.header-link {
+  color: inherit;
+  text-decoration: none;
+}
+.header-link:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+/* Focus outline */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,118 @@
+\documentclass[10.5pt,letterpaper]{article}
+
+% ---------- MARGINS ----------
+\usepackage[left=0.45in,right=0.45in,top=0.2in,bottom=0.15in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
+
+% ---------- section headings: bold caps + full-width rule ----------
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\hrule\vspace{3pt}]
+\titlespacing*{\section}{0pt}{5pt}{1pt}
+
+% ---------- tight bullet lists ----------
+\setlist[itemize]{leftmargin=14pt, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\begin{document}
+
+{\Huge \bfseries Aman Kumar}\\[3pt]
+\textbf{Software Engineer \ $|$ \ Backend Development} \ $|$ \ B.Tech (Computer Science \& Engineering), \href{https://ptu.ac.in/}{IKGPTU Jalandhar} \\[2pt]
+{\small
+\href{tel:+918084075974}{+91 8084075974} $|$
+\href{mailto:amankumar.cs27@gmail.com}{amankumar.cs27@gmail.com} $|$
+\href{https://linkedin.com/in/amankr32}{linkedin.com/in/amankr32} $|$
+\href{https://github.com/amankr32}{github.com/amankr32} $|$
+\href{https://leetcode.com/amankr32}{leetcode.com/amankr32} $|$
+\href{https://amankrportfolio.vercel.app/}{amankrportfolio.vercel.app}
+}
+\vspace{-8pt}
+
+% ============ SUMMARY ============
+% \section*{SUMMARY}
+% Computer Science undergraduate with hands-on backend development experience from a Summer internship at IIT Ropar, 4+ shipped full-stack projects, and an open-source contribution.
+
+% ============ EDUCATION ============
+\section*{EDUCATION}
+\href{https://ptu.ac.in/}{\textbf{IK Gujral Punjab Technical University}} \ $|$ \ B.Tech (Computer Science \& Engineering) \ $|$ \ CGPA: \textbf{8.52}/10 \hfill \textit{Aug 2023 -- May 2027}\\
+\textbf{Relevant Coursework:} Data Structures \& Algorithms, Database Management Systems, Operating Systems, Computer Networks 
+
+% ============ SKILLS ============
+\section*{TECHNICAL SKILLS}
+\begin{itemize}
+    \item \textbf{Programming Languages:} Java, JavaScript, SQL
+    \item \textbf{Backend:} Node.js, Express.js, REST APIs, WebSockets
+    \item \textbf{Databases \& Tools:} PostgreSQL, MongoDB, MySQL, Git, GitHub, Postman
+    \item \textbf{Concepts:} Authentication \& Authorization, API Design, Database Design, Caching, Concurrency
+\end{itemize}
+
+% ============ PROFESSIONAL EXPERIENCE ============
+\section*{PROFESSIONAL EXPERIENCE}
+
+\textbf{\href{https://www.iitrpr.ac.in/}{Indian Institute of Technology (IIT Ropar)}, \href{https://vled.iitrpr.ac.in/}{VLED Lab} \ $|$ \ Summer Intern} \hfill \textit{May 2026 -- Jul 2026}\\
+\textit{Full-Stack Development (MERN), Machine Learning} \hfill \textit{Rupnagar, Punjab, India}
+\begin{itemize}
+  \item Developed PippaQ, a semantic Q\&A platform serving role-based access control, question-paper reputation scoring, and RAG-powered duplicate detection, working across Express.js, MongoDB, and React in a 5-member team. \href{https://drive.google.com/file/d/1RU8wq0uf07ByLVOdb_mGwBCbujkNM8WS/view?usp=drivesdk}{[Docs]}
+  \item Diagnosed and resolved a production middleware failure that caused all APIs to return HTTP 500 responses, restoring platform-wide functionality through a merged fix. \href{https://github.com/abhi03241/FAQ/pull/2}{[PR \#2]}
+  \item Co-developed Spandan v0.8.0, a real-time classroom polling system using Socket.IO event synchronization, role-based authentication, and Whisper-powered transcription for automated question generation.
+\end{itemize}
+
+\textbf{\href{https://www.excellencetechnology.in/}{Excellence Technology} \ $|$ \ Backend Trainee} \hfill \textit{Jun 2025 -- Jul 2025}\\
+\textit{Full-Stack Development} \hfill \textit{Chandigarh, India}
+\begin{itemize}
+  \item Built CodeBlog, a MERN-stack blogging platform implementing authentication, content publishing, and CRUD-based content management workflows. \href{https://thecodeblog.vercel.app/}{[Live} $|$ \href{https://github.com/amankr32/TheCodeBlog}{GitHub]}
+\end{itemize}
+
+% ============ OPEN SOURCE CONTRIBUTION ============
+\section*{OPEN SOURCE CONTRIBUTION}
+
+\textbf{ArchScope} \href{https://github.com/Arch-Scope/ArchScope-public/}{[GitHub]}
+\begin{itemize}
+  \item Implemented a dynamic Contributors section by integrating the GitHub API, building a cached backend route, and enabling automatic contributor discovery with a responsive horizontal-scroll UI. \href{https://github.com/Arch-Scope/ArchScope-public/pull/56}{[PR \#56]}
+  \item Developed a time-complexity based latency modeling feature supporting O(1), O(log n), O(n), and O(n²) growth patterns, enabling more realistic API performance benchmarking and simulation. \href{https://github.com/Arch-Scope/ArchScope-public/pull/59}{[PR \#59]}
+\end{itemize}
+
+% ============ PROJECTS ============
+\section*{PROJECTS}
+
+\textbf{LatencyLens \ $|$ \ API Latency Benchmarking Tool} \href{https://latencylens-app.vercel.app/}{[Live} $|$ \href{https://github.com/amankr32/LatencyLens}{GitHub]}
+\begin{itemize}
+  \item Built LatencyLens, an API benchmarking platform that generates and analyzes 10,000 concurrent HTTP requests while computing p50, p90, p95, and p99 latency metrics with under 5ms instrumentation overhead.
+  \item Architected the system using Clean Architecture principles, implementing 12+ REST APIs, Server-Sent Events (SSE) for live benchmark tracking, and MongoDB-backed historical result storage to improve maintainability and observability.
+  \item Developed a time-complexity driven latency simulation engine supporting O(1), O(log n), O(n), and O(n²) growth models, enabling realistic workload simulation for performance analysis.
+\end{itemize}
+
+\textbf{Resume Roaster \ $|$ \ AI Resume ATS Checker} \href{https://resumeoptimizer-app.vercel.app/}{[Live} $|$ \href{https://github.com/amankr32/Resume_Optimizer}{GitHub]}
+\begin{itemize}
+  \item Built Resume Roaster, an AI-powered resume analysis platform that processes uploaded resumes, extracts structured candidate data, and evaluates alignment against job descriptions.
+  \item Developed a multi-stage evaluation pipeline for resume parsing, skill extraction, keyword matching, ATS analysis, and personalized feedback generation, enabling comprehensive resume reviews.
+  \item Integrated LLM-based scoring and recommendation workflows to generate actionable improvement suggestions across content, formatting, experience presentation, and role-specific optimization.
+\end{itemize}
+
+\textbf{CampusCart \ $|$ \ PTU Marketplace (Ongoing)} \href{https://github.com/amankr32/CampusCart}{[GitHub]}
+\begin{itemize}
+  \item Built CampusCart to simplify peer-to-peer trading within college communities, implementing secure authentication, product management workflows, image uploads, and PostgreSQL-backed persistence.
+  \item Designed and developed a buyer-seller messaging system with product-linked conversations and image sharing, enabling direct communication without relying on external platforms.
+  \item Implemented role-based access control and protected backend APIs, ensuring secure marketplace operations and controlled access to platform resources.
+\end{itemize}
+
+% ============ ACHIEVEMENTS ============
+\section*{ACHIEVEMENTS}
+\begin{itemize}
+    \item Selected for a Summer Internship at \href{https://www.iitrpr.ac.in/}{IIT Ropar} (VLED Lab).
+    \item Awarded the Merit-cum-Means Scholarship for maintaining strong academic performance during B.Tech studies.
+    \item Recipient of the F.C. Sondhi Scholarship for ranking among the top 1\% of students in school-level academics.
+\end{itemize}
+
+\end{document}
